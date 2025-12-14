@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="account_discount_menu"
+        name="Discount"
+        action="account_discount_action"
+        parent="account.account_invoicing_menu"
+        sequence="10"/>
+
+</odoo>

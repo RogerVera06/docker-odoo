@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="customer_vip" model="account.discount">
+        <field name="customer_type">VIP</field>
+        <field name="percentage">15</field>
+    </record>
+
+    <record id="customer_retail" model="account.discount">
+        <field name="customer_type">Retail</field>
+        <field name="percentage">5</field>
+    </record>
+
+    <record id="customer_wholesale" model="account.discount">
+        <field name="customer_type">Wholesale</field>
+        <field name="percentage">25</field>
+    </record>
+
+</odoo>

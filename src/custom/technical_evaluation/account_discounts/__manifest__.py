@@ -18,13 +18,19 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','contacts','account'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        #Data
+        'data/account_discount.xml',
+
+        #Views
+        'views/account_move_views.xml',
+        'views/res_partner_views.xml',
+        'views/account_discount_views.xml',
+        'views/ir_menu_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
