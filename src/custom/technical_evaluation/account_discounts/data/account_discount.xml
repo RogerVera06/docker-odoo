@@ -3,17 +3,17 @@
     <data noupdate="1">
         <!-- Creacion de tipos de cliente predeterminados -->
         <record id="customer_vip" model="account.discount">
-            <field name="customer_type">Customer VIP</field>
+            <field name="customer_type">Cliente VIP</field>
             <field name="percentage">15</field>
         </record>
 
         <record id="customer_retail" model="account.discount">
-            <field name="customer_type">Customer Retail</field>
+            <field name="customer_type">Cliente Minorista</field>
             <field name="percentage">5</field>
         </record>
 
         <record id="customer_wholesale" model="account.discount">
-            <field name="customer_type">Customer Wholesale</field>
+            <field name="customer_type">Cliente Mayorista</field>
             <field name="percentage">25</field>
         </record>
     </data>
