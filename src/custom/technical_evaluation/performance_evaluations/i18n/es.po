@@ -1,0 +1,221 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* performance_evaluations
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20251213\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:51+0000\n"
+"PO-Revision-Date: 2025-12-15 08:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: performance_evaluations
+#: model:ir.actions.report,print_report_name:performance_evaluations.action_hr_performance_review_report
+msgid "\"Performance Review History - %s\" % (object.name)"
+msgstr "\"Historial de evaluación de desempeño - %s\" % (object.name)"
+
+
+#. module: performance_evaluations
+#. odoo-python
+#: code:addons/performance_evaluations/models/hr_performance_review.py:0
+#, python-format
+msgid "An employee can only have one pending performance review."
+msgstr "Un empleado sólo puede tener una evaluación de desempeño pendiente."
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__weaknesses
+msgid "Areas for improvement identified during the review"
+msgstr "Áreas de mejora identificadas durante la evaluación"
+
+#. module: performance_evaluations
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_view_form
+msgid "Aspects to consider"
+msgstr "Aspectos a considerar"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__comments
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Comments"
+msgstr "Comentarios"
+
+#. module: performance_evaluations
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_view_form
+msgid "Complete Review"
+msgstr "Evaluación Completada"
+
+#. module: performance_evaluations
+#: model:ir.model.fields.selection,name:performance_evaluations.selection__hr_performance_review__status__completed
+msgid "Completed"
+msgstr "Completada"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__review_date
+msgid "Date of performance review"
+msgstr "Fecha de la evaluación de desempeño"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: performance_evaluations
+#: model:ir.model,name:performance_evaluations.model_hr_employee
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__employee_id
+msgid "Employee being evaluated"
+msgstr "Empleado que está siendo evaluado"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__reviewer_id
+msgid "Employee who is doing the review"
+msgstr "Empleado que está haciendo la evaluación"
+
+#. module: performance_evaluations
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Employee:"
+msgstr "Empleado:"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__goals_next_period
+msgid "Goals for Next Period"
+msgstr "Metas para el próximo período"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__id
+msgid "ID"
+msgstr ""
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__strengths
+msgid "Key strengths observed during the review period"
+msgstr "Puntos fuertes observados durante el período de evaluación"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: performance_evaluations
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "No performance reviews found."
+msgstr "No se encontraron evaluaciones de desempeño."
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__score
+msgid "Numerical rating (1 to 10)"
+msgstr "Calificación numérica (Del 1 al 10)"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__goals_next_period
+msgid "Objectives to be achieved in the next review cycle"
+msgstr "Objetivos a alcanzar en el próximo ciclo de evaluación"
+
+#. module: performance_evaluations
+#. odoo-python
+#: code:addons/performance_evaluations/models/hr_performance_review.py:0
+#, python-format
+msgid "Only pending reviews can be completed."
+msgstr "Sólo se pueden completar las revisiones pendientes."
+
+#. module: performance_evaluations
+#. odoo-python
+#: code:addons/performance_evaluations/models/hr_performance_review.py:0
+#, python-format
+msgid "Only the assigned reviewer can complete this review."
+msgstr "Sólo el evaluador asignado puede completar esta evaluación."
+
+#. module: performance_evaluations
+#: model:ir.model.fields.selection,name:performance_evaluations.selection__hr_performance_review__status__pending
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: performance_evaluations
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_view_form
+msgid "Performance Feedback"
+msgstr "Comentarios sobre el rendimiento"
+
+#. module: performance_evaluations
+#: model:ir.actions.report,name:performance_evaluations.action_hr_performance_review_report
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Performance Review History"
+msgstr "Historial de evaluación de desempeño"
+
+#. module: performance_evaluations
+#: model:ir.actions.act_window,name:performance_evaluations.hr_performance_review_action_kanban
+#: model:ir.model,name:performance_evaluations.model_hr_performance_review
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_employee__performance_review_ids
+#: model:ir.ui.menu,name:performance_evaluations.hr_performance_review_menu
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_employee_inherit_view_form
+msgid "Performance Reviews"
+msgstr "Evaluaciones de desempeño"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,help:performance_evaluations.field_hr_performance_review__comments
+msgid "Qualitative feedback on the employee's performance"
+msgstr "Retroalimentación cualitativa sobre el desempeño del empleado"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__review_date
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Review Date"
+msgstr "Fecha de Evaluación"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__reviewer_id
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Reviewer"
+msgstr "Evaluador"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__score
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Score"
+msgstr "Puntaje"
+
+#. module: performance_evaluations
+#. odoo-python
+#: code:addons/performance_evaluations/models/hr_performance_review.py:0
+#, python-format
+msgid "Score must be between 0 and 10."
+msgstr "El puntaje debe estar entre 0 y 10"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__status
+#: model_terms:ir.ui.view,arch_db:performance_evaluations.hr_performance_review_report
+msgid "Status"
+msgstr "Estatus"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__strengths
+msgid "Strengths"
+msgstr "Fortalezas"
+
+#. module: performance_evaluations
+#: model:ir.model.fields,field_description:performance_evaluations.field_hr_performance_review__weaknesses
+msgid "Weaknesses"
+msgstr "Debilidades"

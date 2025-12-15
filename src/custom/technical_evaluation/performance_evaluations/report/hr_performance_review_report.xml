@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hr_performance_review_report">
+        <t t-call="web.basic_layout">
+            <style>
+                .review-table { width: 100%; border-collapse: collapse; margin: 10px auto; }
+                .review-table th,
+                .review-table td { 
+                    border: 1px solid #ccc; 
+                    padding: 6px; 
+                    text-align: center; 
+                    font-size: 10pt; 
+                }
+                .review-table th { background-color: #f5f5f5; }
+                .review-table .left { text-align: left; }
+                .review-table .right { text-align: right; }
+                .employee-name { text-align: center; margin: 15px 0; font-weight: bold; }
+                .report-title { text-align: center; margin: 0 0 20px; }
+                .no-reviews { text-align: center; color: #777; font-style: italic; }
+            </style>
+
+            <div class="page" style="padding: 10px;">
+                <h2 class="report-title">Performance Review History</h2>
+
+                <t t-foreach="docs" t-as="o">
+                    <div class="employee-name">Employee: <t t-esc="o.name"/></div>
+
+                    <t t-if="o.performance_review_ids">
+                        <table class="review-table">
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Review Date</th>
+                                    <th>Reviewer</th>
+                                    <th>Score</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.performance_review_ids" t-as="review">
+                                    <tr>
+                                        <td><span t-field="review.status"/></td>
+                                        <td><span t-field="review.review_date"/></td>
+                                        <td class="left"><span t-field="review.reviewer_id.name"/></td>
+                                        <td class="right"><span t-field="review.score"/></td>
+                                        <td class="left"><span t-esc="review.comments or ''"/></td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-else="">
+                        <p class="no-reviews">No performance reviews found.</p>
+                    </t>
+
+                    <p style="page-break-after: always;"></p>
+                </t>
+            </div>
+        </t>
+    </template>
+
+
+    <record id="action_hr_performance_review_report" model="ir.actions.report">
+        <field name="name">Performance Review History</field>
+        <field name="model">hr.employee</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">performance_evaluations.hr_performance_review_report</field>
+        <field name="report_file">performance_evaluations.hr_performance_review_report</field>
+        <field name="print_report_name">"Performance Review History - %s" % (object.name)</field>
+        <field name="paperformat_id" ref="base.paperformat_us"/>
+        <field name="binding_model_id" ref="hr.model_hr_employee"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
