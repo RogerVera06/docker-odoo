@@ -1,20 +1,19 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "account_discounts",
+    'name': "Discount Policies on Invoices",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Module that allows managing discounts according to customer types",
 
     'description': """
-Long description of module's purpose
+    Module that allows managing discounts according to customer types in the 'Invoicing' module
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Roger Vera",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Invoicing',
     'version': '0.1',
 
     # any module necessary for this one to work correctly

@@ -7,3 +7,5 @@ src/ext_*
 .resources/Dockerfile
 **/.vscode/
 venv
+__pycache__/
+*.pyc
