@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_inherit_critical_stock_alerts_form" model="ir.ui.view">
+        <field name="name">product.template.inherit.critical.stock.alerts.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='detailed_type']" position="after">
+                <field name="min_stock_qty" groups='stock.group_stock_manager'/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Vista de productos en stock critico -->
+    <record id="product_critical_stock_alerts_view_action" model="ir.actions.act_window">
+        <field name="name">Critical Stock Products</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_below_minimum','=',True)]</field>
+        <field name="context">{'group_by':'categ_id'}</field>
+    </record>
+
+</odoo>

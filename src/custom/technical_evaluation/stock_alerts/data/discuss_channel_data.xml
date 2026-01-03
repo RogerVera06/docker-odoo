@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Canal de alertas de stock critico -->
+        <record model="discuss.channel" id="channel_stock_critical_alerts">
+            <field name="name">Stock Critical Alerts</field>
+            <field name="description">Automated alerts for products below minimum stock levels.</field>
+            <field name="channel_type">channel</field>
+            <field name="group_ids" eval="[(4, ref('stock.group_stock_manager'))]"/>
+        </record>
+    </data>
+</odoo>
