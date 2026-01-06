@@ -24,6 +24,7 @@ Module for generating automated alerts for products based on a set minimum thres
         #'security/ir.model.access.csv',
         #Data
         'data/discuss_channel_data.xml',
+        'data/ir_cron.xml',
         #Views
         'views/product_template_views.xml',
         'views/ir_menu_views.xml',

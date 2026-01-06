@@ -52,3 +52,9 @@ class ProductTemplate(models.Model):
             )
 
             self.last_stock_alert = fields.Date.today()
+            
+    def _cron_send_stock_alerts(self):
+        #Accion planificada para enviar alertas
+        products = self.search([('is_below_minimum', '=', True)])
+        for product in products:
+            product._send_alert()
