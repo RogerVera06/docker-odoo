@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_alerts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20251213\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-06 22:59+0000\n"
+"PO-Revision-Date: 2026-01-06 22:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_alerts
+#: model:ir.actions.act_window,name:stock_alerts.product_critical_stock_alerts_view_action
+#: model:ir.ui.menu,name:stock_alerts.product_template_crtitical_stock_menu
+msgid "Critical Stock Products"
+msgstr "Productos en Stock Critico"
+
+#. module: stock_alerts
+#: model:ir.model.fields,help:stock_alerts.field_product_product__min_stock_qty
+#: model:ir.model.fields,help:stock_alerts.field_product_template__min_stock_qty
+msgid "Inventory threshold that triggers stock alerts"
+msgstr "Umbral de inventario que activa alertas de stock"
+
+#. module: stock_alerts
+#: model:ir.model.fields,field_description:stock_alerts.field_product_product__is_below_minimum
+#: model:ir.model.fields,field_description:stock_alerts.field_product_template__is_below_minimum
+msgid "Is Below Minimum"
+msgstr "Está por debajo del mínimo"
+
+#. module: stock_alerts
+#: model:ir.model.fields,field_description:stock_alerts.field_product_product__last_stock_alert
+#: model:ir.model.fields,field_description:stock_alerts.field_product_template__last_stock_alert
+msgid "Last Stock Alert Date"
+msgstr "Fecha de la última alerta de stock"
+
+#. module: stock_alerts
+#: model:ir.model.fields,field_description:stock_alerts.field_product_product__min_stock_qty
+#: model:ir.model.fields,field_description:stock_alerts.field_product_template__min_stock_qty
+msgid "Minimum Stock Quantity"
+msgstr "Cantidad Minima de Stock"
+
+#. module: stock_alerts
+#: model:ir.model,name:stock_alerts.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_alerts
+#: model:ir.actions.server,name:stock_alerts.ir_cron_send_stock_alerts_ir_actions_server
+msgid "Send Stock Critical Alerts"
+msgstr "Enviar Alertas de Stock Critico"
