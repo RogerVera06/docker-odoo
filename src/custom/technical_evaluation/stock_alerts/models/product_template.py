@@ -33,7 +33,7 @@ class ProductTemplate(models.Model):
                 return
             
             #Creamos el mensaje de alerta:
-            message = _(("The product '%s' is below the minimum stock quantity: %s. Current stock: %s.")) % (self.name,self.min_stock_qty,self.qty_available)
+            message = _("The product '%s' is below the minimum stock quantity: %s. Current stock: %s.") % (self.name,self.min_stock_qty,self.qty_available)
 
             #Se publica el mensaje en el chatter del producto
             self.message_post(
