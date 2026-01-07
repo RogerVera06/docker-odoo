@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="stock_storage_tag_menu"
+        name="Stock Storage Tags"
+        action="stock_storage_tag_action"
+        parent="stock.menu_product_in_config_stock"
+        sequence="70"/>
+
+    <menuitem
+        id="product_template_stock_storage_tag_menu"
+        name="Products grouped by tag"
+        action="product_template_stock_storage_tag_kanban_action"
+        parent="stock.menu_stock_inventory_control"
+        sequence="30"/>
+
+</odoo>

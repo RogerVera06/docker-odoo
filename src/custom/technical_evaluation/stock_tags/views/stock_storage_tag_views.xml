@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="stock_storage_tag_tree_view" model="ir.ui.view">
+        <field name="name">stock.storage.tag.tree.view</field>
+        <field name="model">stock.storage.tag</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Storage Tags">
+                <field name="name"/>
+                <field name="color" widget="color"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="stock_storage_tag_form_view" model="ir.ui.view">
+        <field name="name">stock.storage.tag.form.view</field>
+        <field name="model">stock.storage.tag</field>
+        <field name="arch" type="xml">
+            <form string="Stock Storage Tag">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="color" widget="color"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="stock_storage_tag_action" model="ir.actions.act_window">
+        <field name="name">Stock Storage Tags</field>
+        <field name="res_model">stock.storage.tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

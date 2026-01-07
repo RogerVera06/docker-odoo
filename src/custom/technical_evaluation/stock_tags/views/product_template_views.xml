@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_inherit_stock_storage_tag_form_view" model="ir.ui.view">
+        <field name="name">product.template.inherit.stock.storage.tag.form.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_tag_ids']" position="replace">
+                <field name="stock_storage_tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_edit_color': true, 'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Vista Kanban agrupando por etiquetas -->
+    <record id="product_template_stock_storage_tag_kanban_view" model="ir.ui.view">
+        <field name="name">product.template.stock.storage.tag.kanban.view</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stock_storage_tag_ids" class="o_kanban_small">
+                <field name="name"/>
+                <field name="qty_available"/>
+                <field name="list_price"/>
+                <field name="stock_storage_tag_ids"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_title">
+                                <strong><field name="name"/></strong>
+                            </div>
+                            <div class="o_kanban_record_body mt4">
+                                <field 
+                                    name="stock_storage_tag_ids" 
+                                    widget="many2many_tags" 
+                                    options="{'color_field': 'color'}"
+                                />
+                            </div>
+                            <div class="o_kanban_record_bottom mt4">
+                                <span>Stock: <field name="qty_available"/></span>
+                                <span class="ml8">Price: <field name="list_price"/></span>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="product_template_stock_storage_tag_kanban_action" model="ir.actions.act_window">
+        <field name="name">Products grouped by tag</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="view_id" ref="product_template_stock_storage_tag_kanban_view"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="electronics_product_tag" model="stock.storage.tag">
+            <field name="name">Electronics</field>
+            <field name="color">#0000ff</field>
+            <field name="description">Electronic products</field>
+        </record>
+
+        <record id="groceries_product_tag" model="stock.storage.tag">
+            <field name="name">Groceries</field>
+            <field name="color">#FFFF00</field>
+            <field name="description">Groceries products</field>
+        </record>
+
+        <record id="naturals_product_tag" model="stock.storage.tag">
+            <field name="name">Naturals</field>
+            <field name="color">#00FF00</field>
+            <field name="description">Natural products</field>
+        </record>
+    </data>
+    
+
+</odoo>
