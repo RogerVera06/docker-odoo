@@ -61,4 +61,4 @@ msgstr "Enviar Alertas de Stock Critico"
 #, python-format
 msgid ""
 "The product '%s' is below the minimum stock quantity: %s. Current stock: %s."
-msgstr "El producto '%s' is below the minimum stock quantity: %s. Stock actual: %s."
+msgstr "El producto '%s' está por debajo de la cantidad mínima de stock: %s. Stock actual: %s."
